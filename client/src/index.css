@@ -1,0 +1,161 @@
+.main {
+  background-image: url('images/bg4.jpg');
+  background-position: center center;
+  background-size: cover;
+  height: auto;
+  left: 0;
+  min-height: 100%;
+  min-width: 100%;
+  position: absolute;
+  top: 0;
+  width: auto;
+}
+.main .logo {
+  color: #ffffff;
+  font-size: 56px;
+  font-weight: 300;
+  position: relative;
+  text-align: center;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.33);
+  margin-top: 90px;
+  z-index: 3;
+}
+.main .logo.cursive {
+  font-family: 'Grand Hotel', cursive;
+  font-size: 82px;
+}
+.main .content {
+  position: relative;
+  z-index: 4;
+}
+.main .motto {
+  min-height: 100px;
+}
+.main .motto,
+.main .subscribe .info-text {
+  font-size: 28px;
+  color: #ffffff;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.33);
+  text-align: center;
+  margin-top: 50px;
+}
+.main .subscribe .info-text {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+.main .button-text .info-text {
+  text-align: center;
+}
+.bg-main-game {
+  background-image: url('images/bg-brown.jpg');
+  background-position: center center;
+  background-size: cover;
+  height: auto;
+  left: 0;
+  min-height: 100%;
+  min-width: 100%;
+  position: absolute;
+  top: 0;
+  width: auto;
+  display: flex;
+  align-items: center;
+}
+.bg-main-game .footer {
+  color: #ffffff;
+  text-align: center;
+  font-size: xx-large;
+  font-family: 'Grand Hotel', cursive;
+  margin-top: 30px;
+}
+.bg-main-game .header {
+  color: #ffffff;
+  text-align: right;
+  font-size: large;
+  font-family: 'Grand Hotel', cursive;
+  margin-bottom: 30px;
+}
+.congrat {
+  text-align: center;
+  font-family: 'Grand Hotel', cursive;
+}
+.ranking {
+  background-image: url('images/speed/ranking.jpg');
+  background-position: center center;
+  background-size: cover;
+  height: auto;
+  left: 0;
+  min-height: 100%;
+  min-width: 100%;
+  position: absolute;
+  top: 0;
+  width: auto;
+  font-family: 'Grand Hotel', cursive;
+}
+.ranking .title {
+  color: orange;
+  text-align: center;
+  padding: 20px;
+  font-size: xx-large;
+}
+.ranking .footer-pagination {
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 10px;
+}
+/* --------------------------------------------- */
+.slide {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin: 0 auto;
+  width: 466px;
+}
+.matrix {
+  overflow: hidden;
+  background: #150e0b;
+  padding: 8px;
+  position: relative;
+}
+.tile {
+  width: 80px;
+  height: 80px;
+  float: right;
+  cursor: pointer;
+  background: #301f15;
+  margin: 5px;
+  perspective: 1000px;
+}
+.front,
+.back {
+  width: 100%;
+  height: 100%;
+}
+.flipper {
+  width: 100%;
+  height: 100%;
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+.front,
+.back {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.front {
+  z-index: 2;
+  transform: rotateY(0deg);
+  background: #301f15;
+}
+.back {
+  transform: rotateY(180deg);
+  background: #fc6e51;
+}
+.front:hover {
+  background: #e6e9ed;
+}
+.tile.hover .flipper {
+  transform: rotateY(180deg);
+}
